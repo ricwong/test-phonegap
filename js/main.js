@@ -107,6 +107,7 @@ var app = {
 		this.detailsURL = /^#employees\/(\d{1,})/;
 		self.registerEvents();
 		this.store = new MemoryStore(function() {
+			self.showAlert('hello', 'hello title');
 			self.route();
 		});
     }
